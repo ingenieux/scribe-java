@@ -1,5 +1,6 @@
 package org.scribe.services;
 
+import java.security.SecureRandom;
 import java.util.*;
 
 /**
@@ -53,7 +54,7 @@ public class TimestampServiceImpl implements TimestampService
    */
   static class Timer
   {
-    private final Random rand = new Random();
+    private final Random rand = new SecureRandom();
     Long getMilis()
     {
       return System.currentTimeMillis();
