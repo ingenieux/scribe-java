@@ -41,7 +41,7 @@ public class Preconditions
    */
   public static void checkEmptyString(String string, String errorMsg)
   {
-    check(string != null && !string.trim().equals(""), errorMsg);
+    check(string != null && !"".equals(string.trim()), errorMsg);
   }
 
   /**
