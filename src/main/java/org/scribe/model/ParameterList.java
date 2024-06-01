@@ -47,7 +47,7 @@ public class ParameterList
   {
     Preconditions.checkNotNull(url, "Cannot append to null URL");
     String queryString = asFormUrlEncodedString();
-    if (queryString.equals(EMPTY_STRING))
+    if (EMPTY_STRING.equals(queryString))
     {
       return url;
     }
